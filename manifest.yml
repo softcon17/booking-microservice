@@ -1,0 +1,8 @@
+applications:
+  - name: YOURNAME-booking-microservice
+    memory: 512M
+    buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+    instances: 1
+    command: node main.js
+    services:
+      - bootcamp-booking-db
